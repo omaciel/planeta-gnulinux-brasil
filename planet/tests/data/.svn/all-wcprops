@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/7/trunk/planet/tests/data
+END
+simple.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/7/trunk/planet/tests/data/simple.tmpl
+END
+simple2.tmpl
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/7/trunk/planet/tests/data/simple2.tmpl
+END

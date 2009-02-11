@@ -1,0 +1,1277 @@
+<?xml version="1.0"?>
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:rss="http://purl.org/rss/1.0/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+>
+<foaf:Group>
+	<foaf:name>Planeta Gnu/Linux Brasil</foaf:name>
+	<foaf:homepage>http://planeta.gnulinuxbrasil.org/</foaf:homepage>
+	<rdfs:seeAlso rdf:resource="http://planeta.gnulinuxbrasil.org/foafroll.xml" />
+
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>A geek life</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://geeklife.licio.eti.br">
+					<dc:title>A geek life</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://geeklife.licio.eti.br/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Alexandre &quot;Skarmeth&quot; Alencar</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.alexandrealencar.net/">
+					<dc:title>Alexandre Alencar aka Skarmeth</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feedproxy.google.com/skarmeth" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Alexsandro Felix</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.ffelix.eti.br">
+					<dc:title>F² - Além de um simples F1</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://blog.ffelix.eti.br/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Andre Luis Lopes</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.andrelop.org/blog">
+					<dc:title>andrelop's blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.andrelop.org/blog/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Andrews Medina</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://andrewsmedina.com/">
+					<dc:title>andrewsmedina.com's Weblog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.andrewsmedina.com/rss/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>André Noel</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://andrenoel.com.br">
+					<dc:title>Andre Noel</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://andrenoel.com.br/index.php/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>André Tavares</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://contrasenso.wordpress.com">
+					<dc:title>contra-senso</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://contrasenso.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Antônio &quot;LedStyle&quot; Cláudio</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.tuxresources.org/blog">
+					<dc:title>LedStyle » Linux e Software Livre</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.tuxresources.org/blog/archives/category/liberdade-para-todos/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Arthur Furlan</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://arthurfurlan.org/blog">
+					<dc:title>arthurfurlan.org</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://arthurfurlan.org/blog/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Aurélio A. Heckert</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.colivre.coop.br/~aurium/aurium.xml" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Aurélio Marinho Jargas</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://aurelio.wordpress.com">
+					<dc:title>Blog do Aurélio (verde)</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://aurelio.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Avi Alkalay</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://avi.alkalay.net">
+					<dc:title>Avi Alkalay</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://avi.alkalay.net/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Brodock</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://brodock.uocentral.com.br">
+					<dc:title>BrodocK: Ubuntu e Tecnologia</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://brodock.uocentral.com.br/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Bruno Boaventura (brunobol)</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://brunoboaventura.livejournal.com/">
+					<dc:title>Bruno Boaventura</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://brunoboaventura.livejournal.com/data/rss" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Cainã Costa</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://sryche.archlinux-br.org/blog">
+					<dc:title>Sryche's Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://sryche.archlinux-br.org/blog/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Carlos Doki</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://carlosdoki.wordpress.com">
+					<dc:title>Carlos Doki</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://carlosdoki.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Cesar Cardoso</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://zyakannazio.eti.br/fudeblog">
+					<dc:title>Fudeblog by Cesar Cardoso</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://zyakannazio.eti.br/fudeblog/feed/rss/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Christiano Anderson</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://christiano.blog.br">
+					<dc:title>Christiano Anderson</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://christiano.blog.br/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Coringão</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://coringao.wordpress.com">
+					<dc:title>UBUNTU - Minha Vida</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://coringao.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>CrimeBoy</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://celo.wordpress.com">
+					<dc:title>crimeboy</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://celo.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Cássia Luz</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://cassialuz.casoft.info">
+					<dc:title>Cássia Luz</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://cassialuz.casoft.info/?feed=atom" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Danilo Cesar</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.danilocesar.com/blog">
+					<dc:title>protected  * void</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.danilocesar.com/blog/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Diogo Leal</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://my.opera.com/diogoleal/">
+					<dc:title>Diogo Leal</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://my.opera.com/diogoleal/xml/rss/blog/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Djavan Fagundes</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://tecnologic.wordpress.com">
+					<dc:title>[tecno-logic]</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://tecnologic.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Duarte Diogo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://omeublog.net/blog2.php">
+					<dc:title>Caminhos...</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://omeublog.net/xmlsrv/atom.php?blog=1" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Duda Nogueira</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://dudanogueira.com.br">
+					<dc:title>Lero Lero com Blah Blah Blah</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://dudanogueira.com.br/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Eder L. Marques</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.edermarques.net">
+					<dc:title>edermarques.net</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://blog.edermarques.net/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Edivaldo Bezerra Brito</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.edivaldobrito.com.br">
+					<dc:title>Software Livre para um mundo melhor</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.edivaldobrito.com.br/?feed=atom" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Elyézer Mendes Rezende</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://elyezer.com">
+					<dc:title>elyezer.zero</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds2.feedburner.com/elyezer" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Evaldo Junior Bento</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://infog.casoft.info">
+					<dc:title>InFog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/casoft/RhIq" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Evandro Pastor</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.quartoestudio.com/blog">
+					<dc:title>QuartoEstudio</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.quartoestudio.com/blog/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Everlinux</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.everlinux.com/blog">
+					<dc:title>Everlinux's Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.everlinux.com/blog/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Fazer Jogos</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://fazerjogos.org">
+					<dc:title>Fazer Jogos</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://fazerjogos.org/?feed=atom" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Felipe Tonello</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://felipetonello.com/blog">
+					<dc:title>Felipe Tonello</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/chackalsjc" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Foocast</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://foocast.wordpress.com">
+					<dc:title>Foocast</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://foocast.wordpress.com/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Frederico Araújo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://nq6.blogspot.com/">
+					<dc:title>Ubuntu Linux Dicas &amp; Afins</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://nq6.blogspot.com/feeds/posts/default" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Fábio Nogueira</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://ubuntuser.com.br/blog/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>GUS - BR</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.slackwarebrasil.org">
+					<dc:title>Grupo de Usuarios Slackware Brasil</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.slackwarebrasil.org/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Guilherme Cunha</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://wiki.guilhermecunha.com.br/wiki/">
+					<dc:title>Guilherme Cunha</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://wiki.guilhermecunha.com.br/wiki/feed.php?mode=list&amp;ns=" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Guilherme Jr.</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.guilhermejr.net">
+					<dc:title>Coisas que me dão vontade de escrever</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.guilhermejr.net/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Guto Carvalho</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://gutocarvalho.net/wordpress">
+					<dc:title>gutocarvalho.net</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://gutocarvalho.net/wordpress/feed/atom" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Hamacker</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://hamacker.wordpress.com">
+					<dc:title>Hamacker's Palace</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://hamacker.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Henrique Junior</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://lonelyspooky.com">
+					<dc:title>Lonely Spooky's Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://lonelyspooky.com/feed" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Hugo Dória</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://hdoria.archlinux-br.org/blog">
+					<dc:title>Hugo Doria</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://hdoria.archlinux-br.org/blog/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Israel Júnior</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.zaeel.org">
+					<dc:title>Israel Junior » Linux</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.zaeel.org/tag/linux/feed" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Iuri Diniz</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.igdium.com/">
+					<dc:title>LoL - Linux on Limbo</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://blog.igdium.com/feeds/posts/default" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Jomar</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://homembit.com">
+					<dc:title>void life(void)</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://homembit.com/feed" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>José Vitor Lopes</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://josevitor.blog.br">
+					<dc:title>Jose Vitor » Linux</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/JoseVitor-Linux" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>João Felipe Mitre</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://jfmitre.com/">
+					<dc:title>Blog do Mitre</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://jfmitre.blogspot.com/atom.xml" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Jyulliano Rocha</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.jyulliano.com">
+					<dc:title>Jyulliano Rocha</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.jyulliano.com/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Júlio Neto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://geniuslife.wordpress.com">
+					<dc:title>Genius Life</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/GeniusLife" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Kodumaro</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://kodumaro.blogspot.com/">
+					<dc:title>Kodumaro</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://kodumaro.blogspot.com/feeds/posts/default?alt=rss" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>KurtKraut</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.kurtkraut.net/blog">
+					<dc:title>Kurt Kraut</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.kurtkraut.net/blog/index.php/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Laudeci Oliveira</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://laudecioliveira.org/blog">
+					<dc:title>Pretto's Techno Space</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://laudecioliveira.org/blog/?feed=rss2&amp;language=pt" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Leonardo Amaral</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://paodiqueijo.wordpress.com">
+					<dc:title>Ubuntu na terra do pão di queijo » Ubuntu</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://paodiqueijo.wordpress.com/category/ubuntu/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Leonardo Barros</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://leo3g.blogspot.com/">
+					<dc:title>LEO3G - NOTÍCIA A QUALQUER HORA E  LUGAR!</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://leo3g.blogspot.com/feeds/posts/default" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Leonardo Fontenelle</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://leonardof.org">
+					<dc:title>Leonardo Fontenelle</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://leonardof.org/feed/pt/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Licio Fernando</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.licio.eti.br">
+					<dc:title>Linhas mal traçadas</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://blog.licio.eti.br/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Marcelo C. Rocha</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://marcelokalib.blogspot.com/">
+					<dc:title>Marcelo Cavalcante - Kalib</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://marcelokalib.blogspot.com/feeds/posts/default?alt=rss" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Marcelo Minholi</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://minholi.com/blog">
+					<dc:title>Blog do Minholi</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/BlogDoMinholi" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Marco Antonio Gomez</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.dbit.com.br/blog">
+					<dc:title>dbit.com.br</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://dbit.com.br/blog/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Mauricio Pretto</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.eunomundo.com.br/diario">
+					<dc:title>Eu no Mundo</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.eunomundo.com.br/diario/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Moises Fontana</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://moisesfontana.blogspot.com/">
+					<dc:title>MoisesFontana</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/MoisesFontana" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>MuriloQ</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://muriloq.com/blog">
+					<dc:title>muriloq</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://muriloq.com/blog/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>N3t0</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.n3t0.com">
+					<dc:title>n3t0´s place » PlanetaGNU</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.n3t0.com/category/planetagnu/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nando Vieira</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://simplesideias.com.br">
+					<dc:title>Simples Idéias. Por Nando Vieira.</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://simplesideias.com.br/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nação Livre</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://nacaolivre.org">
+					<dc:title>Nação Livre</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.nacaolivre.org/feed/atom" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nerdson não vai à escola</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://nerdson.com/blog">
+					<dc:title>Nerdson não vai à escola</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/nerdson" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Nuno Pinheiro</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://pinheiro-kde.blogspot.com/">
+					<dc:title>KDE Pinheiro</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://pinheiro-kde.blogspot.com/feeds/posts/default" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Og Maciel</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.ogmaciel.com">
+					<dc:title>Open Source Guy</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds2.feedburner.com/OpenSourceGuyPosts" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>OpenTech</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://tuxonearth.wordpress.com">
+					<dc:title>OpenTech</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://tuxonearth.wordpress.com/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Otávio Cordeiro</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://canetatinteiro.org/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Paulo Igor</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://napatadaesfinge.blogspot.com/">
+					<dc:title>Na Pata Da Esfinge...</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://napatadaesfinge.blogspot.com/feeds/posts/default?alt=rss" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Pedro Cavaco</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://pedrocavaco.adamastor.org">
+					<dc:title>Pedro Cavaco</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://pedrocavaco.adamastor.org/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Philipe Cardoso</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.zoomdigital.org">
+					<dc:title>Zoom Digital :: Tecnologia, variedades, humor.</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/zoomdigitalorg" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rafael Ferreira</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://rafaelgeek.blogspot.com/">
+					<dc:title>Analise o bosque por entre as árvores...</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://rafaelgeek.blogspot.com/feeds/posts/default?alt=rss" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rafael Gomes</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://techfree.wordpress.com">
+					<dc:title>Tecnologia Livre!</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://techfree.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rafael Proença</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.cypherbios.org/blog">
+					<dc:title>Rafael Proença's</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.cypherbios.org/blog/?cat=5&amp;language=pt&amp;feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rafael Sfair</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.sfair.org/blog">
+					<dc:title>According to Sfair » PlanetaGnuLinux</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.sfair.org/blog/wp-rss2.php?cat=15&amp;language=pt" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Renata Rocha</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://renata.org">
+					<dc:title>Renata</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://renata.org/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rodrigo Flores</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://www.blog.rodrigoflores.org">
+					<dc:title>Rodrigo Flores Weblog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/RodrigoFloresWeblog" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Rui Moura</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://ruimoura.net/blog">
+					<dc:title>RUIMOURA.NET</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/rmouranet" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Sergio Luiz Araújo Silva</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://vivaotux.blogspot.com/">
+					<dc:title>vivaotux</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://vivaotux.blogspot.com/atom.xml" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Sérgio Mateus</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="">
+					<dc:title></dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://www.desktoplinux.com.br/blog/?feed=atom" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Sérgio Rafael Lemke</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://warever.info/sr/blog">
+					<dc:title>Sergio Rafael Lemke</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://warever.info/sr/blog/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Tarcísio Sassara</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://tsassara.wordpress.com">
+					<dc:title>Tarcisio Sassara</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://tsassara.wordpress.com/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Tecnologia. Inteligente</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://blog.vettalabs.com">
+					<dc:title>Tecnologia. Inteligente.</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://blog.vettalabs.com/feed/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Thadeu Penna</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://profs.if.uff.br/tjpp/">
+					<dc:title>Thadeu Penna's Wiki blog:entradas</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/ThadeuPennasWiki" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Tiago B Peczenyj</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://pacman.blog.br/blog">
+					<dc:title>Blog do PacMan</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://pacman.blog.br/blog/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Tux Vermelho</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://tuxvermelho.blogspot.com/">
+					<dc:title>Tux Vermelho</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://tuxvermelho.blogspot.com/atom.xml" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Vinicius Depizzol</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://vdepizzol.wordpress.com">
+					<dc:title>Vinicius Depizzol's Blog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://vdepizzol.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Vladimir Melo</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://vladimirmelo.wordpress.com">
+					<dc:title>Vladimir Melo</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://vladimirmelo.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Walter Cruz</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://devlog.waltercruz.com/">
+					<dc:title>devlog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds2.feedburner.com/walterdevlog" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Wendell Silva</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://caminholivre.wordpress.com">
+					<dc:title>Caminho Livre</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://caminholivre.wordpress.com/feed/atom/" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Wilson Júnior</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://n3rd3x.guake-terminal.org/wordpress">
+					<dc:title>N3RD3X Idéias Livres</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://n3rd3x.guake-terminal.org/wordpress/?feed=rss2" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>Yuri Malheiros</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://ylog.blogspot.com/">
+					<dc:title>yLog</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds2.feedburner.com/ylog" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+	<foaf:member>
+		<foaf:Agent>
+			<foaf:name>nGen</foaf:name>
+			<foaf:weblog>
+				<foaf:Document rdf:about="http://edgabaldi.com/blog">
+					<dc:title>edgabaldi.com</dc:title>
+					<rdfs:seeAlso>
+						<rss:channel rdf:about="http://feeds.feedburner.com/edgabaldi" />
+					</rdfs:seeAlso>
+				</foaf:Document>
+			</foaf:weblog>
+		</foaf:Agent>
+	</foaf:member>
+
+</foaf:Group>
+</rdf:RDF>

@@ -1,0 +1,19 @@
+2009-02-07 Og Maciel <ogmaciel@gnome.org>
+
+	* config: Stores configuration files.
+	* config/config.ini: Contains main configuration for Planet.
+	* planet.py: Main planet code.
+	* planet-cache.py: Caches feeds.
+	* runtests.py: Tests for the code.
+	* planet: Stores planetplanet engine.
+	* templates: Stores templates used to render the contents in different
+	formats.
+	* templates/{opml,rss10,rss20,atom,foafroll}.xml.tmpl: templates for 
+	syndication content.
+	* templates/index.html.tmpl: Template for the main page.
+	* web: Stores web content that gets displayed.
+	* web/images: Stores diverse images files.
+	* web/images/*.png: Gotchis for all authors.
+	* web/images/halloween/*.png: Gotchis for halloween.
+	* web/images/pirate/*.png: Gotchis for talk like a pirate day.
+	* web/planet.css: Main css file.

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svn/!svn/ver/7/trunk/planet/tests
+END
+test_sub.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/7/trunk/planet/tests/test_sub.py
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/7/trunk/planet/tests/__init__.py
+END
+test_main.py
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/7/trunk/planet/tests/test_main.py
+END
+test_sanitize.py
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/7/trunk/planet/tests/test_sanitize.py
+END
+test_channel.py
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/7/trunk/planet/tests/test_channel.py
+END
