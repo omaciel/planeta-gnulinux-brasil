@@ -1,3 +1,8 @@
+2009-02-11 Og Maciel <ogmaciel@gnome.org>
+
+	* planet: Removed planetplanet code.
+	* planet-cache.py planet.py runtests.py: Removed planetplanet code.
+
 2009-02-07 Og Maciel <ogmaciel@gnome.org>
 
 	* config: Stores configuration files.
