@@ -5,7 +5,7 @@ from django.db import models
 class Author(models.Model):
     author_name = models.CharField(max_length=50, blank=True)
     author_email = models.EmailField(blank=True)
-    gotchi = models.URLField(null=True, blank=True,
+    gotchi = models.ImageField(null=True, upload_to='gotchi',
         help_text="URL to an image file (.jpg, .png, ...) of a hackergotchi")
 
     def __unicode__(self):
