@@ -12,48 +12,56 @@ import feedparser
 
 USER_AGENT = 'sansplanet'
 
-def process_feed(feed):
+def fetch_feed(feed):
+
+    channel = None
 
     try:
-        pf = feedparser.parse(feed.feed_url, agent=USER_AGENT)
-    except:
-        return feed
+        channel = feedparser.parse(feed.feed_url, etag=feed.etag, agent=USER_AGENT)
+    except Exception, e:
+        print str(e)
+        pass
 
-    if feed.etag == pf.etag or pf.status == 304:
+    return channel
+
+def process_feed(feed):
+
+    channel = fetch_feed(feed)
+
+    if feed.etag == channel.etag or channel.status == 304:
         print "Feed has not changed since we last checked."
-        return feed
+        return None
 
-    if pf.status >= 400:
+    if channel.status >= 400:
         print "There was an error parsing this feed."
-        return feed
+        return None
 
     # the feed has changed (or it is the first time we parse it)
     # saving the etag and last_modified fields
-    feed.etag = pf.get('etag', '')
+    feed.etag = channel.get('etag', '')
     # some times this is None (it never should) *sigh*
     if feed.etag is None:
         feed.etag = ''
 
     try:
-        feed.last_modified = mtime(pf.modified)
+        feed.last_modified = datetime.datetime.fromtimestamp(time.mktime(channel.modified))
     except:
-        pass
+        feed.last_modified = None
 
-    feed.feed_title = pf.feed.get('title', '')
-    feed.tagline = pf.feed.get('tagline', '')
-    feed.feed_url = pf.feed.get('link', '')
+    feed.feed_title = channel.feed.get('title', feed.feed_title)
+    #feed.tagline = channel.feed.get('tagline', feed.tagline)
+    #feed.feed_url = channel.feed.get('link', feed.feed_url)
     feed.last_checked = datetime.datetime.now()
 
     print "Feed updated"
     feed.save()
 
-    process_entries(pf)
+    return channel
 
-def process_entries(feed):
+def process_entries(feed, channel):
 
-    import epdb; epdb.st()
-    for entry in feed.entries:
-        guid = entry.get('id', title)
+    for entry in channel.entries:
+        guid = entry.get('id', feed.feed_title)
 
         try:
             link = entry.link
@@ -90,21 +98,26 @@ def process_entries(feed):
         #fcat = self.get_tags()
         comments = entry.get('comments', '')
 
-        try:
-            post = models.Post.objects.filter(feed=feed.id).filter(guid__in=guid)
-        except:
-            print "Creating new post."
-            post = models.Post(
-                feed=feed,
-                title=title,
-                link=link,
-                content=content,
-                date_modified=date_modified,
-                guid=guid,
-                comments=comments
-            )
+        from planeta.models import Post
 
-            post.save()
+        post = Post.objects.filter(feed=feed.id).filter(guid__in=guid)
+        if not post:
+            print "Creating new post."
+            post = Post()
+        else:
+            print "Updating post"
+            post = post[0]
+
+        print type(feed)
+        post.feed=feed,
+        post.title=title,
+        post.link=link,
+        post.content=content,
+        post.date_modified=date_modified,
+        post.guid=guid,
+        post.comments=comments
+
+        post.save()
 
 def main():
     parser = optparse.OptionParser(usage='Foo [options]')
@@ -115,13 +128,15 @@ def main():
     if options.settings:
         os.environ["DJANGO_SETTINGS_MODULE"] = options.settings
 
-    from planeta import models
+    from planeta.models import Feed
 
-    feeds = models.Feed.objects.all()
+    feeds = Feed.objects.all()
 
     for feed in feeds:
         #TODO: parsing code
-        process_feed(feed)
+        channel = process_feed(feed)
+        if channel:
+            process_entries(feed, channel)
 
 if __name__ == '__main__':
     main()
