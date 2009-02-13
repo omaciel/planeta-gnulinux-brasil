@@ -108,13 +108,12 @@ def process_entries(feed, channel):
             print "Updating post"
             post = post[0]
 
-        print type(feed)
-        post.feed=feed,
-        post.title=title,
-        post.link=link,
-        post.content=content,
-        post.date_modified=date_modified,
-        post.guid=guid,
+        post.feed=feed
+        post.title=title
+        post.link=link
+        post.content=content
+        post.date_modified=date_modified
+        post.guid=guid
         post.comments=comments
 
         post.save()

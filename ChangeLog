@@ -1,3 +1,7 @@
+2009-02-13 Og Maciel <ogmaciel@gnome.org>
+
+	* planeta_update.py: Fetches posts data for configured authors.
+
 2009-02-11 Og Maciel <ogmaciel@gnome.org>
 
 	* planet: Removed planetplanet code.
