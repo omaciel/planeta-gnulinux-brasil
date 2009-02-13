@@ -9,6 +9,7 @@ import traceback
 import sys
 
 import feedparser
+import settings
 
 USER_AGENT = 'sansplanet'
 
@@ -17,15 +18,15 @@ def process_feed(feed):
     try:
         pf = feedparser.parse(feed.feed_url, agent=USER_AGENT)
     except:
-        return feed
+        return None
 
     if feed.etag == pf.etag or pf.status == 304:
         print "Feed has not changed since we last checked."
-        return feed
+        return None
 
     if pf.status >= 400:
         print "There was an error parsing this feed."
-        return feed
+        return None
 
     # the feed has changed (or it is the first time we parse it)
     # saving the etag and last_modified fields
@@ -34,33 +35,33 @@ def process_feed(feed):
     if feed.etag is None:
         feed.etag = ''
 
-    try:
-        feed.last_modified = mtime(pf.modified)
-    except:
-        pass
+    if len(pf.entries) > 0:
+        try:
+            feed.last_modified = datetime.datetime.fromtimestamp(time.mktime(pf.modified))
+        except:
+            feed.last_modified = None
 
-    feed.feed_title = pf.feed.get('title', '')
-    feed.tagline = pf.feed.get('tagline', '')
-    feed.feed_url = pf.feed.get('link', '')
-    feed.last_checked = datetime.datetime.now()
+        feed.feed_title = pf.feed.get('title', '')
+        feed.tagline = pf.feed.get('tagline', '')
+        feed.feed_url = pf.feed.get('link', '')
+        feed.last_checked = datetime.datetime.now()
 
-    print "Feed updated"
-    feed.save()
+        print "Feed updated"
+        feed.save()
 
-    process_entries(pf)
+    #process_entries(feed, pf)
 
-def process_entries(feed):
+def process_entries(pp, posts):
 
-    import epdb; epdb.st()
-    for entry in feed.entries:
-        guid = entry.get('id', title)
+    for entry in posts.get('entries', []):
+        guid = entry.get('id', '')
 
         try:
-            link = entry.link
+            link = entry.get('link')
         except AttributeError:
-            link = feed.link
+            link = posts.link
         try:
-            title = entry.title
+            title = entry.get('title')
         except AttributeError:
             title = link
 
@@ -90,12 +91,13 @@ def process_entries(feed):
         #fcat = self.get_tags()
         comments = entry.get('comments', '')
 
+        from planeta.models import Post
         try:
-            post = models.Post.objects.filter(feed=feed.id).filter(guid__in=guid)
+            post = Post.objects.filter(feed=pp.id).filter(guid__in=guid)
         except:
             print "Creating new post."
-            post = models.Post(
-                feed=feed,
+            post = Post(
+                feed=pp,
                 title=title,
                 link=link,
                 content=content,
@@ -115,13 +117,13 @@ def main():
     if options.settings:
         os.environ["DJANGO_SETTINGS_MODULE"] = options.settings
 
-    from planeta import models
 
-    feeds = models.Feed.objects.all()
+    from planeta.models import Feed
+    feeds = Feed.objects.all()
 
     for feed in feeds:
         #TODO: parsing code
-        process_feed(feed)
+        posts = process_feed(feed)
 
 if __name__ == '__main__':
     main()
