@@ -100,7 +100,8 @@ def process_entries(feed, channel):
 
         from planeta.models import Post
 
-        post = Post.objects.filter(feed=feed.id).filter(guid__in=guid)
+        import epdb; epdb.st()
+        post = Post.objects.filter(feed=feed.id, guid=guid)
         if not post:
             print "Creating new post."
             post = Post()
@@ -126,6 +127,8 @@ def main():
 
     if options.settings:
         os.environ["DJANGO_SETTINGS_MODULE"] = options.settings
+    else:
+        os.environ["DJANGO_SETTINGS_MODULE"] = 'settings'
 
     from planeta.models import Feed
 
