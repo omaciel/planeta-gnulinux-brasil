@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %}Posts - {{ block.super }}{% endblock %}
+
+{% block main_content %}
+    <h1>Posts</h1>
+
+    {% if object_list %}
+
+        <table>
+            <tr>
+                <th>Post</th>
+            </tr>
+            {% for post in object_list %}
+            <tr>
+                <td>{{ post.title }}</td>
+                <td>{{ post.content|safe }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% endif %}
+{% endblock %}
