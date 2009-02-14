@@ -2,7 +2,13 @@ from django.conf.urls.defaults import *
 
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
+from django.views.generic.list_detail import object_list, object_detail
+
 admin.autodiscover()
+
+from planeta.models import Post
+
+post = {'queryset': Post.objects.all()}
 
 urlpatterns = patterns('',
     # Example:
@@ -13,5 +19,8 @@ urlpatterns = patterns('',
     # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
     # Uncomment the next line to enable the admin:
-    (r'^admin/(.*)', admin.site.root),
+    url(r'^admin/(.*)', admin.site.root),
+    url(r'^post/$', object_list, post, name='posts'),
+    url(r'^post/(?P<object_id>\d+)/$', object_detail, post, name='post'),
+    #(r'^artigo/(?P<post_id>\d+)/$', 'planeta.views.post'),
 )
