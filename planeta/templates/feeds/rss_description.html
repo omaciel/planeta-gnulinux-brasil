@@ -1,0 +1,4 @@
+<h3><img src="{{ obj.feed.author.gotchi.url }}" alt="gotchi"  /> <a href="{{ obj.link }}">{{ obj.title }}</a></h3>
+
+<h4>Written in {{ obj.date_created|date:"F j, Y" }}</h4>
+{{ obj.content|safe }}
