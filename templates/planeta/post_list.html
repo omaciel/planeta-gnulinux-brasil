@@ -13,4 +13,13 @@
             </tr>
         {% endfor %}
     {% endif %}
+
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">Newer entries</a>
+        {% endif %}
+        {% if page_obj.has_next %}
+            <a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">Older entries</a>
+        {% endif %}
+    {% endif %}
 {% endblock %}

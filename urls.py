@@ -9,6 +9,10 @@ admin.autodiscover()
 from planeta.models import Post
 
 post = {'queryset': Post.objects.all()}
+page = {'queryset': Post.objects.all(),
+        # TODO put the paginated_by value in the settings file (maybe a configuration file?)
+        'paginate_by': 5,
+        }
 
 urlpatterns = patterns('',
     # Example:
@@ -23,4 +27,5 @@ urlpatterns = patterns('',
     url(r'^post/$', object_list, post, name='posts'),
     url(r'^post/(?P<object_id>\d+)/$', object_detail, post, name='post'),
     #(r'^artigo/(?P<post_id>\d+)/$', 'planeta.views.post'),
+    url(r'^page/(?P<page>[0-9]+)/$', object_list, page),
 )
