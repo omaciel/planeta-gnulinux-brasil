@@ -3,6 +3,8 @@ from django.conf.urls.defaults import *
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 from django.views.generic.list_detail import object_list, object_detail
+from django.conf import settings
+import os
 
 admin.autodiscover()
 
@@ -27,5 +29,7 @@ urlpatterns = patterns('',
     url(r'^post/$', object_list, post, name='posts'),
     url(r'^post/(?P<object_id>\d+)/$', object_detail, post, name='post'),
     #(r'^artigo/(?P<post_id>\d+)/$', 'planeta.views.post'),
+    url(r'^gotchi/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "gotchi")}),
+    url(r'^$', object_list, page),
     url(r'^page/(?P<page>[0-9]+)/$', object_list, page),
 )

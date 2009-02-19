@@ -8,7 +8,7 @@
     {% if object_list %}
 
         {% for post in object_list %}
-            <h3><img src="{{ post.feed.author.gotchi }} alt='gotchi' " /> {{ post.title }} </h3>
+            <h3><img src="{{ post.feed.author.gotchi.url }}" alt="gotchi"  /> {{ post.title }} </h3>
             <p>{{ post.content|safe }}</p>
             </tr>
         {% endfor %}
