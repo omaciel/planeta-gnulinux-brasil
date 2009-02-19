@@ -9,6 +9,12 @@ import os
 admin.autodiscover()
 
 from planeta.models import Post
+from planeta.feeds import RssFeed, AtomFeed
+
+feeds = {
+    'rss': RssFeed,
+    'atom': AtomFeed,
+}
 
 post = {'queryset': Post.objects.all()}
 page = {'queryset': Post.objects.all(),
@@ -32,4 +38,5 @@ urlpatterns = patterns('',
     url(r'^gotchi/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "gotchi")}),
     url(r'^$', object_list, page),
     url(r'^page/(?P<page>[0-9]+)/$', object_list, page),
+    url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
