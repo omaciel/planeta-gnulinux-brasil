@@ -34,9 +34,13 @@ urlpatterns = patterns('',
     url(r'^admin/(.*)', admin.site.root),
     url(r'^post/$', object_list, post, name='posts'),
     url(r'^post/(?P<object_id>\d+)/$', object_detail, post, name='post'),
-    #(r'^artigo/(?P<post_id>\d+)/$', 'planeta.views.post'),
-    url(r'^gotchi/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "gotchi")}),
     url(r'^$', object_list, page),
     url(r'^page/(?P<page>[0-9]+)/$', object_list, page),
     url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
 )
+
+if settings.DEBUG:
+    urlpatterns += patterns('',
+        url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}, name='media'),
+        url(r'^gotchi/(?P<path>.*)$', 'django.views.static.serve', {'document_root': os.path.join(settings.MEDIA_ROOT, "gotchi")}),
+    )
