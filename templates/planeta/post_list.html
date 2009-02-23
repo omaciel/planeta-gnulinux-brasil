@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block title %}Posts - {{ block.super }}{% endblock %}
+
+{% block main_content %}
+    <h1>Posts</h1>
+
+    {% if object_list %}
+
+        {% for post in object_list %}
+            <h3><img src="{{ post.feed.author.gotchi.url }}" alt="gotchi"  /> <a href="{{ post.link }}">{{ post.title }}</a></h3>
+            <h4>Written in {{ post.date_created|date:"F j, Y" }}</h4>
+            <p>{{ post.content|safe }}</p>
+            {% if post.comments %}
+                <p><a href="{{ post.comments }}">Comment on this post.</a></p>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+
+    {% if is_paginated %}
+        {% if page_obj.has_previous %}
+            <a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">Newer entries</a>
+        {% endif %}
+        {% if page_obj.has_next %}
+            <a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">Older entries</a>
+        {% endif %}
+    {% endif %}
+{% endblock %}
