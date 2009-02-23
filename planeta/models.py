@@ -1,12 +1,38 @@
 from django.db import models
 
-# Create your models here.
+# Social Networks
+TWITTER = 'twitter'
+IDENTICA = 'identi.ca'
+
+SOCIAL_NETWORKS_NAMES = (
+    (TWITTER, 'Twitter'),
+    (IDENTICA, 'Identi.ca'),
+)
+
+SOCIAL_NETWORKS_URLS = {
+    TWITTER: 'http://twitter.com/',
+    IDENTICA: 'http://identi.ca/',
+}
+
+class SocialNetwork(models.Model):
+    network_name = models.CharField(max_length=50, choices=SOCIAL_NETWORKS_NAMES)
+    user_name = models.CharField(max_length=50, null=False, blank=False)
+    url = models.URLField(null=True, blank=True)
+    icon = models.ImageField(null=True, blank=True, upload_to='icons')
+
+    def __unicode__(self):
+        return self.url
+
+    def save(self):
+        self.url = SOCIAL_NETWORKS_URLS[self.network_name] + self.user_name
+        super(SocialNetwork, self).save()
 
 class Author(models.Model):
     author_name = models.CharField(max_length=50, blank=True)
     author_email = models.EmailField(blank=True)
     gotchi = models.ImageField(null=True, upload_to='gotchi',
         help_text="URL to an image file (.jpg, .png, ...) of a hackergotchi")
+    network = models.ManyToManyField(SocialNetwork, null=True, blank=True)
 
     def __unicode__(self):
         return u'%s' % self.author_name
