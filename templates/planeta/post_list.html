@@ -1,19 +1,25 @@
 {% extends "base.html" %}
 
-{% block title %}Posts - {{ block.super }}{% endblock %}
+{% block title %}{{ block.super }}{% endblock %}
 
 {% block main_content %}
-    <h1>Posts</h1>
 
     {% if object_list %}
 
         {% for post in object_list %}
-            <h3><img src="{{ post.feed.author.gotchi.url }}" alt="gotchi"  /> <a href="{{ post.link }}">{{ post.title }}</a></h3>
-            <h4>Written in {{ post.date_created|date:"F j, Y" }}</h4>
-            <p>{{ post.content|safe }}</p>
-            {% if post.comments %}
-                <p><a href="{{ post.comments }}">Comment on this post.</a></p>
-            {% endif %}
+
+            <div class="post">
+                <h2>{{ post.title|upper }}</h2>
+                <div class="content">
+                {% if forloop.first %}
+                    <div class="first_post">{{ post.content|safe|truncatewords:"200" }}</div>
+                {% else %}
+                    <div class="next_post">{{ post.content|safe|truncatewords:"100" }}</div>
+                {% endif %}
+                <div class="more">Read more</div>
+                </div>
+            </div>
+
         {% endfor %}
     {% endif %}
 

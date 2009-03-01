@@ -3,13 +3,21 @@
     <head>
         <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/rss/" />
         <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/atom/" />
-        <title>{% block title %}Planeta{% endblock %}</title>
+        <link href="/media/css/sansplanet.css" rel="stylesheet" type="text/css" />
+        <title>{% block title %}Planeta GNU/Linux Brasil{% endblock %}</title>
     </head>
     <body>
+        {% block header %}
+        <div class="header">
+            <div class="title">Planeta</div>
+        </div>
+        {% endblock %}
 
         {% block main_content %}{% endblock %}
 
         {% block extra_main_content %}{% endblock %}
+
+        {% block footer %}Footer goes here{% endblock %}
 
     </body>
 </html>
