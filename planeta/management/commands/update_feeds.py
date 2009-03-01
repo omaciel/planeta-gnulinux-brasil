@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+from django.core.management import BaseCommand
+
 import os
 import time
 import optparse
@@ -119,26 +121,14 @@ def process_entries(feed, channel):
 
         post.save()
 
-def main():
-    parser = optparse.OptionParser(usage='Foo [options]')
+class Command(BaseCommand):
+    def handle(self, **kwargs):
+        from planeta.models import Feed
 
-    parser.add_option('--settings')
-    options = parser.parse_args()[0]
+        feeds = Feed.objects.all()
 
-    if options.settings:
-        os.environ["DJANGO_SETTINGS_MODULE"] = options.settings
-    else:
-        os.environ["DJANGO_SETTINGS_MODULE"] = 'settings'
-
-    from planeta.models import Feed
-
-    feeds = Feed.objects.all()
-
-    for feed in feeds:
-        #TODO: parsing code
-        channel = process_feed(feed)
-        if channel:
-            process_entries(feed, channel)
-
-if __name__ == '__main__':
-    main()
+        for feed in feeds:
+            #TODO: parsing code
+            channel = process_feed(feed)
+            if channel:
+                process_entries(feed, channel)
