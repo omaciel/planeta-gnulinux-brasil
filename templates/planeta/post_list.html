@@ -13,11 +13,11 @@
                 <div class="post_content">
                     {% if forloop.first %}
                         <div class="first_post">
-                            {{ post.content|safe|truncatewords:"100" }}
+                            {{ post.content|safe|truncatewords_html:"140" }}
                         </div>
                     {% else %}
                         <div class="next_post">
-                            {{ post.content|safe|truncatewords:"50" }}
+                            {{ post.content|safe|truncatewords_html:"50" }}
                         </div>
                     {% endif %}
                     <div class="post_more">Read more</div>
