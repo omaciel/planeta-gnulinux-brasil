@@ -8,27 +8,35 @@
 
         {% for post in object_list %}
 
-            <div class="post">
+            <div class="planet_post">
                 <h2>{{ post.title|upper }}</h2>
-                <div class="content">
-                {% if forloop.first %}
-                    <div class="first_post">{{ post.content|safe|truncatewords:"200" }}</div>
-                {% else %}
-                    <div class="next_post">{{ post.content|safe|truncatewords:"100" }}</div>
-                {% endif %}
-                <div class="more">Read more</div>
+                <div class="post_content">
+                    {% if forloop.first %}
+                        <div class="first_post">
+                            {{ post.content|safe|truncatewords:"100" }}
+                        </div>
+                    {% else %}
+                        <div class="next_post">
+                            {{ post.content|safe|truncatewords:"50" }}
+                        </div>
+                    {% endif %}
+                    <div class="post_more">Read more</div>
                 </div>
             </div>
 
         {% endfor %}
+
     {% endif %}
 
-    {% if is_paginated %}
-        {% if page_obj.has_previous %}
-            <a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">Newer entries</a>
+    <div class="pagination">
+        {% if is_paginated %}
+            {% if page_obj.has_previous %}
+                <p><a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">Newer entries</a></p>
+            {% endif %}
+            {% if page_obj.has_next %}
+                <p><a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">Older entries</a></p>
+            {% endif %}
         {% endif %}
-        {% if page_obj.has_next %}
-            <a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">Older entries</a>
-        {% endif %}
-    {% endif %}
+    </div>
+
 {% endblock %}
