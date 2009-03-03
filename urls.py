@@ -19,7 +19,7 @@ feeds = {
 post = {'queryset': Post.objects.all()}
 page = {'queryset': Post.objects.all(),
         # TODO put the paginated_by value in the settings file (maybe a configuration file?)
-        'paginate_by': 5,
+        'paginate_by': settings.PAGINATE_BY,
         }
 
 urlpatterns = patterns('',

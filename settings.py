@@ -46,6 +46,14 @@ MEDIA_ROOT = os.path.join(PROJECT_DIR, 'media')
 # Examples: "http://media.lawrence.com", "http://example.com/media/"
 MEDIA_URL = '/media/'
 
+# How many articles to display on thw frontpage
+PAGINATE_BY = 10
+
+# Default media storage for avatars
+AVATAR_LOCATION = 'gotchi'
+# Default avatar for authors
+AUTHOR_AVATAR = os.path.join(AVATAR_LOCATION, 'default.png')
+
 # URL prefix for admin media -- CSS, JavaScript and images. Make sure to use a
 # trailing slash.
 # Examples: "http://foo.com/media/", "/media/".

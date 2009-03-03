@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 
 # Social Networks
 TWITTER = 'twitter'
@@ -30,12 +31,12 @@ class SocialNetwork(models.Model):
 class Author(models.Model):
     author_name = models.CharField(max_length=50, blank=True)
     author_email = models.EmailField(blank=True)
-    gotchi = models.ImageField(null=True, upload_to='gotchi',
+    gotchi = models.ImageField(null=True, blank=True, upload_to=settings.AVATAR_LOCATION,
         help_text="URL to an image file (.jpg, .png, ...) of a hackergotchi")
     network = models.ManyToManyField(SocialNetwork, null=True, blank=True)
 
     def __unicode__(self):
-        return u'%s' % self.author_name
+        return self.author_name
 
 class Feed(models.Model):
     author = models.ForeignKey(Author, null=False, blank=False)
