@@ -92,10 +92,10 @@ def process_entries(feed, channel):
             content = entry.get('summary',
                 entry.get('description', ''))
 
-        if 'modified_parsed' in entry:
+        if 'modified_parsed' in entry and entry.modified_parsed is not None:
             date_modified = datetime.datetime.fromtimestamp(time.mktime(entry.modified_parsed))
         else:
-            date_modified = None
+            date_modified = datetime.datetime.now()
 
         #fcat = self.get_tags()
         comments = entry.get('comments', '')
