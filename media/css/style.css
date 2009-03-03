@@ -1,0 +1,330 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:normal;font-style:normal;text-align:left;font-family:inherit;}table{border-collapse:collapse;border-spacing:0;}ol,ul{list-style:none;}q:before,q:after,blockquote:before,blockquote:after{content:"";}
+
+
+/*layout*/
+
+body{
+	width:939px;
+	margin:auto;
+	font-family:Georgia;
+	position:relative;
+	margin-top:2em;
+}
+
+
+/*branding*/
+
+h1{
+	text-indent:-9000px;
+	overflow:hidden;
+	background: url("../images/planeta_gnu_linux_brasil_logo_300x165.jpg") no-repeat;
+	width:300px;
+	height:165px;
+	position:relative;
+	left:320px;
+}
+
+/*ads*/
+.ad{
+	width:300px;
+	height:100px;
+	background:gray;
+	position:absolute;
+	top:58px;
+}
+
+#ad_2{
+	right:0;
+}
+
+
+/*date*/
+#date p{
+	left:320px;
+	position:absolute;
+	top:-10px;
+	margin-bottom:1em;
+	width:100%;
+	font-size:17px;
+}
+
+/*main content*/
+#main_content{
+	width:620px;
+	float:left;
+}
+
+
+/*sidebar*/
+#sidebar, #search{
+	width:298px;
+	float:right;
+	
+}
+
+#sidebar,#main_content{
+	margin-top:18px;
+}
+
+
+/*website_information*/
+div#website_information p{
+	clear:both;
+	font-size:10px;
+	text-align:center;
+	padding:25px 0 25px 0;
+	position:relative;
+	
+}
+
+/*headers, links & p*/
+h1,h2,h3,h4,h5,h1>a,h2>a,h3>a,h4>a,h5>a,h6>a{
+	color:#001f57;
+	font-weight:bold;
+	text-decoration:none;
+	letter-spacing:-.05em;
+	font-size:15px;
+	text-transform: uppercase;
+	margin-bottom:.5em;
+}
+
+p{
+	font-size:12px;
+}
+#featured_article h2>a{
+	font-size:34px;
+}
+
+
+div.single_article p a, div#related_articles li a, p.author_website a{
+	color:#001f57;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a{
+	color:#001f57;
+	text-decoration:none;
+	font-weight:bold;
+}
+
+a:hover, div.single_article p a:hover, div#related_articles li a:hover,p.author_website a:hover{
+	text-decoration:underline;
+}
+
+
+
+#sidebar h3{
+	color:black;
+}
+
+/*main_navigation*/
+div#main_navigation ul li{
+	display:inline;
+	margin-left:20px;
+}
+
+div#main_navigation ul li a{
+	font-size:12px;
+	line-height:33px;
+	color:#fff;
+	text-decoration:none;
+}
+
+div#main_navigation ul li a:hover{
+	border-bottom:1px solid #fff;
+}
+
+div#main_navigation{
+	background:#001f57;
+	height:33px;
+}
+
+
+
+/*featured_article*/
+
+li#featured_article{
+	border:1px solid black;
+	padding:27px;
+	margin-bottom:20px;
+	height:227px;
+
+}
+
+/* articles */
+
+li.article{
+	display:block;
+	width:280px;
+	padding:10px;
+	height:280px;
+	float:left;
+	overflow:hidden;
+}
+
+/*sidebar*/
+#info{
+	clear:right;
+	border:1px solid black;
+}
+.sidebar_item{
+	padding:20px 20px 20px 20px;
+}
+
+/*search*/
+
+div#search form{
+	padding:1em;
+}
+
+
+
+#search{
+	border:1px solid black;
+	margin-bottom:1em;
+	height:52px;
+}
+
+.buttom{
+	background:#001f57;
+	color:#fff;
+	font-family:Georgia;
+	border:none;
+	height:25px;
+	float:right;
+	text-transform: uppercase;
+	letter-spacing:-.05em;
+}
+
+.buttom:hover{
+	color:#001f57;
+	background:#fff;
+	outline:1px solid #001f57;
+}
+
+.input_text{
+	width:170px;
+	float:left;
+}
+/* more */
+
+p.more{
+	float:right;
+
+}
+
+p.more a{
+	color:#002864;
+	text-decoration:none;
+}
+
+p.more a:hover{
+	text-decoration:underline;
+}
+
+/*arquives page*/
+
+/*session*/
+
+div.session{
+	margin-left:10px;
+	margin-bottom:2em;
+	margin-top:18px;
+}
+div.session h2{
+	font-size:34px;
+	line-height:.5em;
+}
+
+div.session p{
+	font-size:17px;
+	font-weight:bold;
+	line-height:1.5em;
+}
+
+/*date*/
+
+h2.date{
+	color:gray;
+	margin-left:10px;
+	padding-bottom:11px;
+	border-bottom:1px solid gray;
+	
+	
+}
+
+
+/*single_article*/
+
+div.single_article h2{
+	font-size:35px;
+	line-height:.25em;
+	margin-top:18px;
+}
+
+div.single_article p.credit{
+	font-size:17px;
+	font-weight:bold;
+	margin-bottom:1em;
+	
+}
+
+div.single_article p{
+	line-height:1.25em;
+	margin-bottom:1em;
+	font-size:14px;
+}
+
+div.single_article{
+	border-bottom:1px solid black;
+	padding-left:18px;
+}
+
+.hidden{
+	float:left;
+	height:100px;
+	margin:0 1em 1em 0;
+	overflow:hidden;
+	width:300px;
+}
+
+.small_hidden{
+	float:left;
+	height:70px;
+	margin:5px 1em .5em 0;
+	overflow:hidden;
+	width:70px;
+}
+
+
+/*twitter bird*/
+
+a#twitter_bird{
+	float:right;
+	margin:5px 0 .5em 1em;
+	
+}
+
+/*author info*/
+
+p.author_website, div#related_articles p{
+	font-size:17px;
+	font-weight:bold;
+	text-transform:uppercase;
+	margin-top:18px;
+	padding-left:18px;
+}
+
+div#related_articles ul{
+	margin-top:12px;
+	padding-left:18px;
+}
+
+p.author_website{
+	float:left;
+}
+
+div#related_articles{
+	float:right;
+}
