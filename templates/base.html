@@ -3,7 +3,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Title</title>
     <script type="text/javascript" src="/media/js/jquery-1.2.6.min.js"></script>
 
     <link rel="stylesheet" href="/media/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
@@ -19,10 +18,13 @@
         </div><!--end branding-->
 
         <div id="date">
-            <p>Sexta-Feira 24 de Janeiro de 2009</p>
+            <p>{{ now()|</p>
         </div><!--end date-->
 
         {% endblock %}
+
+        {% include "ads.html" %}
+        {% include "navigation.html" %}
 
         {% block main_content %}{% endblock %}
 
@@ -34,6 +36,8 @@
             <p>Planeta Gnu/Linux 2009 Alguns Direitos Reservados. Website by: QuartoEstudio.com</p>
         </div><!--end website_information-->
         {% endblock %}
+
+        {% include "sidebar.html" %}
 
     </div><!--end container-->
 </body>
