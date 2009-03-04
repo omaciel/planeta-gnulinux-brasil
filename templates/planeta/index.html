@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 {% block main_content %}
 
    <div id="main_content">
@@ -12,13 +13,13 @@
             <li id="featured_article">
                 <h2><a href="#">{{ post.title|upper }}</a></h2>
                 <p>{{ post.content|safe|truncatewords_html:"140" }}</p>
-                <p class="more"><a href="/post/{{ post.id }}">Read More</a></p>
+                <p class="more"><a href="/post/{{ post.id }}">{% trans "Read More" %}</a></p>
             </li>
             {% else %} 
             <li class="article">
                 <h2><a href="#">{{ post.title|upper }}</a></h2>
                 <p>{{ post.content|safe|truncatewords_html:"50" }}</p>
-                <p class="more"><a href="/post/{{ post.id }}">Read More</a></p>
+                <p class="more"><a href="/post/{{ post.id }}">{% trans "Read More" %}</a></p>
             </li>
             {% endif %}
         {% endfor %}
@@ -29,10 +30,10 @@
     {% if is_paginated %}
         <div class="pagination">
             {% if page_obj.has_previous %}
-                <p><a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">Newer entries</a></p>
+                <p><a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">{% trans "Newer entries" %}</a></p>
             {% endif %}
             {% if page_obj.has_next %}
-                <p><a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">Older entries</a></p>
+                <p><a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">{% trans "Older entries" %}</a></p>
             {% endif %}
         </div>
     {% endif %}

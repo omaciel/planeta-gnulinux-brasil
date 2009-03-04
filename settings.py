@@ -7,6 +7,9 @@ TEMPLATE_DEBUG = DEBUG
 
 PROJECT_DIR = os.path.dirname(__file__)
 
+PLANET_NAME = "Planeta GNU/Linux Brasil"
+PLANET_URL = "http://planeta.gnulinuxbrasil.org"
+
 ADMINS = (
     ('Og Maciel', 'ogmaciel@gnome.org'),
 )

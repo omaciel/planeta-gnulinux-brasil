@@ -1,20 +1,12 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" 
     "http://www.w3.org/TR/html4/strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <script type="text/javascript" src="/media/js/jquery-1.2.6.min.js"></script>
-
-    <link rel="stylesheet" href="/media/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
-    <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/rss/" />
-    <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/atom/" />
-    {% block title %}<title>Planeta GNU/Linux Brasil</title>{% endblock %}
-</head>
+{% include "header.html" %}
 <body>
     {% block header %}
     <div id="container">
         <div id="branding">
-            <h1><a href="http://planeta.gnulinuxbrasil.org">Planeta Gnu/Linux Brasil</a></h1>
+            <h1><a href="{{ PLANET_URL  }}">{{ PLANET_NAME }}</a></h1>
         </div><!--end branding-->
 
         <div id="date">

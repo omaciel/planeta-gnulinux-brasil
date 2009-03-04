@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
 
 # Social Networks
 TWITTER = 'twitter'
@@ -16,10 +17,31 @@ SOCIAL_NETWORKS_URLS = {
 }
 
 class SocialNetwork(models.Model):
-    network_name = models.CharField(max_length=50, choices=SOCIAL_NETWORKS_NAMES)
-    user_name = models.CharField(max_length=50, null=False, blank=False)
-    url = models.URLField(null=True, blank=True)
-    icon = models.ImageField(null=True, blank=True, upload_to='icons')
+    network_name = models.CharField(
+        _("Network Name"), 
+        max_length=50, 
+        choices=SOCIAL_NETWORKS_NAMES
+    )
+
+    user_name = models.CharField(
+        _("User Name"),
+        max_length=50, 
+        null=False, 
+        blank=False
+    )
+
+    url = models.URLField(
+        _("Network URL"),
+        null=True,
+        blank=True
+    )
+
+    icon = models.ImageField(
+        _("Network Icon"),
+        null=True,
+        blank=True,
+        upload_to='icons'
+    )
 
     def __unicode__(self):
         return self.url
@@ -29,19 +51,51 @@ class SocialNetwork(models.Model):
         super(SocialNetwork, self).save()
 
 class Author(models.Model):
-    author_name = models.CharField(max_length=50, blank=True)
-    author_email = models.EmailField(blank=True)
-    gotchi = models.ImageField(null=True, blank=True, upload_to=settings.AVATAR_LOCATION,
-        help_text="URL to an image file (.jpg, .png, ...) of a hackergotchi")
-    network = models.ManyToManyField(SocialNetwork, null=True, blank=True)
+    author_name = models.CharField(
+        _("Author Name"),
+        max_length=50,
+        blank=True
+    )
+
+    author_email = models.EmailField(
+        _("Email"),
+        blank=True
+    )
+
+    gotchi = models.ImageField(
+        _("Avatar"),
+        null=True,
+        blank=True,
+        upload_to=settings.AVATAR_LOCATION,
+        help_text=_("URL to an image file (.jpg, .png, ...) of a hackergotchi")
+    )
+
+    network = models.ManyToManyField(
+        SocialNetwork,
+        null=True,
+        blank=True
+    )
 
     def __unicode__(self):
         return self.author_name
 
 class Feed(models.Model):
-    author = models.ForeignKey(Author, null=False, blank=False)
-    feed_title = models.CharField(max_length=200, blank=True)
-    feed_url = models.URLField(unique=True)
+    author = models.ForeignKey(
+        Author,
+        null=False,
+        blank=False
+    )
+
+    feed_title = models.CharField(
+        _("Feed Title"),
+        max_length=200,
+        blank=True
+    )
+
+    feed_url = models.URLField(
+        _("Feed URL"),
+        unique=True
+    )
 
     is_active = models.BooleanField(default=True,
         help_text='If disabled, this feed will not be further updated.')
@@ -63,15 +117,47 @@ class Feed(models.Model):
         super(Feed, self).save()
 
 class Post(models.Model):
-    feed = models.ForeignKey(Feed, verbose_name='feed', null=False, blank=False)
-    title = models.CharField(max_length=255)
-    link = models.URLField()
-    content = models.TextField(blank=True)
-    date_modified = models.DateTimeField(null=True, blank=True)
-    guid = models.CharField(max_length=200, db_index=True)
-    comments = models.URLField(blank=True)
+    feed = models.ForeignKey(
+        Feed,
+        verbose_name='feed',
+        null=False,
+        blank=False
+    )
+
+    title = models.CharField(
+        _("Title"),
+        max_length=255
+    )
+
+    link = models.URLField(_("Link"))
+
+    content = models.TextField(
+        _("Content"),
+        blank=True
+    )
+
+    date_modified = models.DateTimeField(
+        _("Date Modified"),
+        null=True,
+        blank=True
+    )
+
+    guid = models.CharField(
+        _("GUID"),
+        max_length=200,
+        db_index=True
+    )
+
+    comments = models.URLField(
+        _("Comments"),
+        blank=True
+    )
+
     #tags = models.ManyToManyField(Tag, verbose_name=_('tags'))
-    date_created = models.DateField(auto_now_add=True)
+    date_created = models.DateField(
+        _("Date Created"),
+        auto_now_add=True
+    )
 
     class Meta:
         verbose_name = 'post'
