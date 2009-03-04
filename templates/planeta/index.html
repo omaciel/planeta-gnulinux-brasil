@@ -26,17 +26,15 @@
     {% endif %}
     </div><!--end main_content-->
 
-
-    <div class="pagination">
-        {% if is_paginated %}
+    {% if is_paginated %}
+        <div class="pagination">
             {% if page_obj.has_previous %}
                 <p><a href="/page/{{ page_obj.previous_page_number }}/" title="Newer entries">Newer entries</a></p>
             {% endif %}
             {% if page_obj.has_next %}
                 <p><a href="/page/{{ page_obj.next_page_number }}/" title="Older entries">Older entries</a></p>
             {% endif %}
-        {% endif %}
-    </div>
-
+        </div>
+    {% endif %}
 
 {% endblock %}
