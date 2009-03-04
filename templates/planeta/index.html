@@ -12,13 +12,13 @@
             <li id="featured_article">
                 <h2><a href="#">{{ post.title|upper }}</a></h2>
                 <p>{{ post.content|safe|truncatewords_html:"140" }}</p>
-                <p class="more"><a href="#">Read More</a></p>
+                <p class="more"><a href="/post/{{ post.id }}">Read More</a></p>
             </li>
             {% else %} 
             <li class="article">
                 <h2><a href="#">{{ post.title|upper }}</a></h2>
                 <p>{{ post.content|safe|truncatewords_html:"50" }}</p>
-                <p class="more"><a href="#">Read More</a></p>
+                <p class="more"><a href="/post/{{ post.id }}">Read More</a></p>
             </li>
             {% endif %}
         {% endfor %}
