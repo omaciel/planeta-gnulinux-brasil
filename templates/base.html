@@ -1,25 +1,40 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-    <head>
-        <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/rss/" />
-        <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/atom/" />
-        <link href="/media/css/sansplanet.css" rel="stylesheet" type="text/css" />
-        <title>{% block title %}Planeta GNU/Linux Brasil{% endblock %}</title>
-    </head>
-    <body>
-        {% block header %}
-        <div class="header">
-            <div class="title">Planeta</div>
-        </div>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Strict//EN" 
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Title</title>
+    <script type="text/javascript" src="/media/js/jquery-1.2.6.min.js"></script>
+
+    <link rel="stylesheet" href="/media/css/style.css" type="text/css" media="screen" title="no title" charset="utf-8"/>
+    <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/rss/" />
+    <link rel="alternate" type="application/rss+xml" title="Planeta GNU/Linux Brasil" href="/feeds/atom/" />
+    {% block title %}<title>Planeta GNU/Linux Brasil</title>{% endblock %}
+</head>
+<body>
+    {% block header %}
+    <div id="container">
+        <div id="branding">
+            <h1><a href="http://planeta.gnulinuxbrasil.org">Planeta Gnu/Linux Brasil</a></h1>
+        </div><!--end branding-->
+
+        <div id="date">
+            <p>Sexta-Feira 24 de Janeiro de 2009</p>
+        </div><!--end date-->
+
         {% endblock %}
 
         {% block main_content %}{% endblock %}
 
+
         {% block extra_main_content %}{% endblock %}
 
         {% block footer %}
-            <p>Footer goes here</p>
+        <div id="website_information">
+            <p>Planeta Gnu/Linux 2009 Alguns Direitos Reservados. Website by: QuartoEstudio.com</p>
+        </div><!--end website_information-->
         {% endblock %}
 
-    </body>
+    </div><!--end container-->
+</body>
 </html>

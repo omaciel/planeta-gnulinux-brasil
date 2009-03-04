@@ -1,32 +1,48 @@
 {% extends "base.html" %}
+<div id="ad_1" class="ad">
 
-{% block title %}{{ block.super }}{% endblock %}
+</div><!--end ad_1-->
+
+<div id="ad_2" class="ad">
+
+</div><!--end ad_2-->
+
+<div id="main_navigation">
+    <ul>
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ARQUIVOS</a></li>
+        <li><a href="#">CONTATO</a></li>
+        <li><a href="#">TAGS</a></li>
+        <li><a href="#">AUTORES</a></li>
+    </ul>
+</div><!--end main_navigation-->
 
 {% block main_content %}
+   <div id="main_content">
 
     {% if object_list %}
 
         {% for post in object_list %}
+        <ul id="article_list">
 
-            <div class="planet_post">
-                <h2>{{ post.title|upper }}</h2>
-                <div class="post_content">
-                    {% if forloop.first %}
-                        <div class="first_post">
-                            {{ post.content|safe|truncatewords_html:"140" }}
-                        </div>
-                    {% else %}
-                        <div class="next_post">
-                            {{ post.content|safe|truncatewords_html:"50" }}
-                        </div>
-                    {% endif %}
-                    <div class="post_more">Read more</div>
-                </div>
-            </div>
-
+            {% if forloop.first %}
+            <li id="featured_article">
+                <h2><a href="#">{{ post.title|upper }}</a></h2>
+                <p>{{ post.content|safe|truncatewords_html:"140" }}</p>
+                <p class="more"><a href="#">Read More</a></p>
+            </li>
+            {% else %} 
+            <li class="article">
+                <h2><a href="#">{{ post.title|upper }}</a></h2>
+                <p>{{ post.content|safe|truncatewords_html:"50" }}</p>
+                <p class="more"><a href="#">Read More</a></p>
+            </li>
+            {% endif %}
         {% endfor %}
-
+        </ul><!--end featured_article-->
     {% endif %}
+    </div><!--end main_content-->
+
 
     <div class="pagination">
         {% if is_paginated %}
@@ -38,5 +54,35 @@
             {% endif %}
         {% endif %}
     </div>
+
+    <div id="sidebar">
+      <div id="search">
+         <form action="#">
+           <div>
+             <input type="text" name="q" size="25" class="input_text" />
+             <input type="submit" name="sa" value="Pesquisar" class="buttom"/>
+           </div>
+         </form>
+
+      </div><!--end search-->
+
+      <div id="info">
+      <div id="about" class="sidebar_item">
+         <h3>Sobre o Planeta</h3>
+            <p>Morbi non erat non ipsum pharetra tempus. Donec orci. Proin in ante. Pellentesque sit amet purus. Cras egestas diam sed ante. Etiam imperdiet urna sit amet risus. Donec ornare arcu id erat. Aliquam ultrices scelerisque sem. In elit nulla, molestie vel, ornare sit amet, interdum vel, mauris. Etiam dignissim imperdiet metus. Morbi non erat non ipsum pharetra tempus. Donec orci. Proin in ante. Pellentesque sit amet purus. Cras egestas diam sed ante. Etiam imperdiet urna sit amet risus. Donec ornare arcu id erat. Aliquam ultrices scelerisque sem. In elit nulla, molestie vel, ornare sit amet, interdum vel, mauris. Etiam dignissim imperdiet metus.</p>
+      </div>
+
+
+      <div id="colaborators" class="sidebar_item">
+         <h3>Colaboradores</h3>
+            <p>Morbi non erat non ipsum pharetra tempus. Donec orci. Proin in ante. Pellentesque sit amet purus. Cras egestas diam sed ante. Etiam imperdiet urna sit amet risus. Donec ornare arcu id erat. Aliquam ultrices scelerisque sem. In elit nulla, molestie vel, ornare sit amet, interdum vel, mauris. Etiam dignissim imperdiet metus. Morbi non erat non ipsum pharetra tempus. Donec orci. Proin in ante. Pellentesque sit amet purus. Cras egestas diam sed ante. Etiam imperdiet urna sit amet risus. Donec ornare arcu id erat. Aliquam ultrices scelerisque sem. In elit nulla, molestie vel, ornare sit amet, interdum vel, mauris. Etiam dignissim imperdiet metus.</p>
+      </div>
+
+      <div id="twitter" class="sidebar_item">
+         <h3>Siga o Planeta no Twitter</h3>
+         <p><a id="twitter_bird" href="../images/twitter_bird_124x120.jpg"><img src="http://quartoestudio.com/sp/images/twitter_bird_124x120.jpg" alt="Twitter Bird" /></a>Morbi non erat non ipsum pharetra tempus. Donec orci. Proin in ante. Pellentesque sit amet purus. Cras egestas diam sed ante. Etiam imperdiet urna sit amet risus. Donec ornare arcu id erat. Aliquam ultrices scelerisque sem. In elit nulla, molestie vel, ornare sit amet, interdum vel, mauris. Etiam dignissim imperdiet metus. Morbi non erat non ipsum pharetra tempus.</p>
+      </div><!--end twitter-->
+    </div><!--end info-->
+    </div><!--end sidebar-->
 
 {% endblock %}
