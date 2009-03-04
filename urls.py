@@ -16,12 +16,16 @@ feeds = {
     'atom': AtomFeed,
 }
 
-post = {'queryset': Post.objects.all()}
+posts = {'queryset': Post.objects.all()}
+post = {'queryset': Post.objects.all(),
+        'template_name': 'planeta/single_article.html',
+}
+
 page = {'queryset': Post.objects.all(),
         # TODO put the paginated_by value in the settings file (maybe a configuration file?)
         'paginate_by': settings.PAGINATE_BY,
         'template_name': 'planeta/index.html',
-        }
+}
 
 urlpatterns = patterns('',
     # Example:
@@ -33,7 +37,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/(.*)', admin.site.root),
-    url(r'^post/$', object_list, post, name='posts'),
+    url(r'^post/$', object_list, posts, name='posts'),
     url(r'^post/(?P<object_id>\d+)/$', object_detail, post, name='post'),
     url(r'^$', object_list, page),
     url(r'^page/(?P<page>[0-9]+)/$', object_list, page),
