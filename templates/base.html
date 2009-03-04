@@ -31,14 +31,13 @@
 
         {% block extra_main_content %}{% endblock %}
 
+        {% include "sidebar.html" %}
+
         {% block footer %}
         <div id="website_information">
             <p>Planeta Gnu/Linux 2009 Alguns Direitos Reservados. Website by: QuartoEstudio.com</p>
         </div><!--end website_information-->
         {% endblock %}
-
-        {% include "sidebar.html" %}
-
     </div><!--end container-->
 </body>
 </html>
