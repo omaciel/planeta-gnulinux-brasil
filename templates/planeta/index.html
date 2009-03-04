@@ -8,7 +8,7 @@
         {% for post in object_list %}
         <ul id="article_list">
 
-            {% if forloop.first %}
+            {% if forloop.first and not page_obj.has_previous %}
             <li id="featured_article">
                 <h2><a href="#">{{ post.title|upper }}</a></h2>
                 <p>{{ post.content|safe|truncatewords_html:"140" }}</p>
