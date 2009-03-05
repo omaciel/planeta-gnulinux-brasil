@@ -3,9 +3,9 @@
 <div id="main_content">
     <div class="single_article">
         <h2>{{ object.title }}</h2>
-        <p class="credit">Por: {{ object.feed.author.author.name }}</p>
+        <p class="credit">Por: {{ object.feed.author }}</p>
         {{ object.content|safe }}
     </div><!--end single_article-->
-    <p class="author_website">Visite o website do <a href="#">autor</a></p>
+    <p class="author_website">Visite o website do <a href="{{ object.feed.site_url }}">autor</a></p>
 </div><!--end main_content-->
 {% endblock %}
