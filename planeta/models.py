@@ -92,13 +92,22 @@ class Feed(models.Model):
         blank=True
     )
 
-    feed_url = models.URLField(
-        _("Feed URL"),
-        unique=True
+    site_url = models.URLField(
+        _("Site URL"),
+        blank=True,
+        help_text=_("URL for the web site")
     )
 
-    is_active = models.BooleanField(default=True,
-        help_text='If disabled, this feed will not be further updated.')
+    feed_url = models.URLField(
+        _("Feed URL"),
+        unique=True,
+        help_text=_("URL for the news feed")
+    )
+
+    is_active = models.BooleanField(
+        default=True,
+        help_text=_("If disabled, this feed will not longer be updated.")
+    )
 
     # http://feedparser.org/docs/http-etag.html
     etag = models.CharField(max_length=50, blank=True)
