@@ -54,6 +54,11 @@ h1{
 	float:left;
 }
 
+/*pagination*/
+.pagination {
+    clear:both;
+    padding-top:20px;
+}
 
 /*sidebar*/
 #sidebar, #search{

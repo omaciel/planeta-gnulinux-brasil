@@ -25,8 +25,7 @@
         {% endfor %}
         </ul><!--end featured_article-->
     {% endif %}
-    </div><!--end main_content-->
-
+    
     {% if is_paginated %}
         <div class="pagination">
             {% if page_obj.has_previous %}
@@ -37,5 +36,6 @@
             {% endif %}
         </div>
     {% endif %}
+    </div><!--end main_content-->
 
 {% endblock %}
