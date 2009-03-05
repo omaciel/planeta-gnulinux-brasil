@@ -28,20 +28,13 @@ page = {'queryset': Post.objects.all(),
 }
 
 urlpatterns = patterns('',
-    # Example:
-    # (r'^aggregator/', include('aggregator.foo.urls')),
-
-    # Uncomment the admin/doc line below and add 'django.contrib.admindocs' 
-    # to INSTALLED_APPS to enable admin documentation:
-    # (r'^admin/doc/', include('django.contrib.admindocs.urls')),
-
-    # Uncomment the next line to enable the admin:
     url(r'^admin/(.*)', admin.site.root),
     url(r'^post/$', object_list, posts, name='posts'),
     url(r'^post/(?P<object_id>\d+)/$', object_detail, post, name='post'),
     url(r'^$', object_list, page),
     url(r'^page/(?P<page>[0-9]+)/$', object_list, page),
     url(r'^feeds/(?P<url>.*)/$', 'django.contrib.syndication.views.feed', {'feed_dict': feeds}),
+    (r'^i18n/', include('django.conf.urls.i18n')),
 )
 
 if settings.DEBUG:

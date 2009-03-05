@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # Django settings for planeta-gnulinux-brasil project.
 
 import os
@@ -33,6 +35,11 @@ TIME_ZONE = 'America/New_York'
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
+
+LANGUAGES = (
+    ('pt_BR', u'Português do Brasil'),
+    ('en', u'American English'),
+)
 
 SITE_ID = 1
 
@@ -76,6 +83,7 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 )
 
 ROOT_URLCONF = 'planeta-gnulinux-brasil.urls'
