@@ -4,9 +4,9 @@
 <div id="main_content">
     <div class="single_article">
         <h2>{{ object.title }}</h2>
-        <p class="credit">{% trans "Writen by: " %}{{ object.feed.author }}</p>
+        <p class="credit">{% trans "Writen by: " %}<a href="{{ object.feed.site_url }}">{{ object.feed.author }}</a></p>
         {{ object.content|safe }}
     </div><!--end single_article-->
-    <p class="author_website">{% trans "Visit the author's" %} <a href="{{ object.feed.site_url }}">{% trans "website." %}</a></p>
+    <!--<p class="author_website"><a href="{{ object.feed.site_url }}">{% trans "Visit the author's website." %}</a></p>-->
 </div><!--end main_content-->
 {% endblock %}
