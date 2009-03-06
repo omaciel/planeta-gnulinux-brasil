@@ -13,7 +13,7 @@ class Command(BaseCommand):
         make_option(
             '--locale',
             action='store_true',
-            dest='locale',
+            dest='foo',
             default=False,
             help='Generate and compile translation files for given locale.',
         ),
@@ -21,16 +21,16 @@ class Command(BaseCommand):
 
     output_transaction = False
 
-    def handle(self, _locale, **kwargs):
+    def handle(self, locale=None, **kwargs):
         extensions=['*.py', '*.html']
 
-        if not _locale:
+        if not locale:
             print "Generating translation files for all available locales."
             makemessages.make_messages(all=True, verbosity=2, extensions=extensions)
             compilemessages.compile_messages()
         else:
             try:
-                print "Generating translation files for %s" % _locale
+                print "Generating translation files for %s" % locale
                 makemessages.make_messages(locale=locale, all=False, verbosity=2, extensions=extensions)
                 compilemessages.compile_messages(locale=locale)
             except Exception, e:
