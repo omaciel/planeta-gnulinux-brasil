@@ -73,8 +73,9 @@ h1{
 
 
 /*website_information*/
+div#website_information {clear:both;}
+
 div#website_information p{
-	clear:both;
 	font-size:10px;
 	text-align:center;
 	padding:25px 0 25px 0;
@@ -168,6 +169,10 @@ li.article{
 	overflow:hidden;
 }
 
+li.article img {
+    display:none;
+}
+
 /*sidebar*/
 #info{
 	clear:right;
@@ -255,8 +260,7 @@ h2.date{
 	margin-left:10px;
 	padding-bottom:11px;
 	border-bottom:1px solid gray;
-	
-	
+	clear:both;
 }
 
 
