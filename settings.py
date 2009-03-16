@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Django settings for planeta-gnulinux-brasil project.
+# Django settings for sansplanet project.
 
 import os
 
@@ -9,35 +9,27 @@ TEMPLATE_DEBUG = DEBUG
 
 PROJECT_DIR = os.path.dirname(__file__)
 
-PLANET_NAME = "Planeta GNU/Linux Brasil"
-PLANET_URL = "http://planeta.gnulinuxbrasil.org"
+PLANET_NAME = "Sans Planet"
+PLANET_URL = "http://sansplanet.gnulinuxbrasil.org"
 
 ADMINS = (
-    ('Og Maciel', 'ogmaciel@gnome.org'),
+    ('Admin', 'admin@example.com'),
 )
 
 MANAGERS = ADMINS
 
 DATABASE_ENGINE = 'sqlite3'
-DATABASE_NAME = os.path.join(PROJECT_DIR, 'planeta.db')
+DATABASE_NAME = os.path.join(PROJECT_DIR, 'sansplanet.db')
 DATABASE_USER = ''
 DATABASE_PASSWORD = ''
 DATABASE_HOST = ''
 DATABASE_PORT = ''
 
-# Local time zone for this installation. Choices can be found here:
-# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
-# although not all choices may be available on all operating systems.
-# If running in a Windows environment this must be set to the same as your
-# system time zone.
 TIME_ZONE = 'America/New_York'
 
-# Language code for this installation. All choices can be found here:
-# http://www.i18nguy.com/unicode/language-identifiers.html
 LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = (
-    ('pt_BR', u'Português do Brasil'),
     ('en', u'American English'),
 )
 
@@ -86,7 +78,8 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.locale.LocaleMiddleware',
 )
 
-ROOT_URLCONF = 'planeta-gnulinux-brasil.urls'
+# Make sure to change this to match your site's name
+ROOT_URLCONF = 'sansplanet.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -104,3 +97,9 @@ INSTALLED_APPS = (
     'django.contrib.syndication',
     'planeta',
 )
+
+try:
+    from prod_settings import *
+except ImportError:
+    print "Using default values."
+    pass
