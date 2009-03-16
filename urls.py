@@ -1,3 +1,5 @@
+import os
+
 from django.conf.urls.defaults import *
 
 # Uncomment the next two lines to enable the admin:
@@ -5,7 +7,6 @@ from django.contrib import admin
 from django.views.generic.list_detail import object_list, object_detail
 from django.views.generic.date_based import archive_year
 from django.conf import settings
-import os
 
 admin.autodiscover()
 
@@ -23,7 +24,6 @@ post = {'queryset': Post.objects.all(),
 }
 
 page = {'queryset': Post.objects.all(),
-        # TODO put the paginated_by value in the settings file (maybe a configuration file?)
         'paginate_by': settings.PAGINATE_BY,
         'template_name': 'planeta/index.html',
 }
