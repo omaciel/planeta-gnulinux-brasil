@@ -30,6 +30,7 @@ def process_feed(feed):
 
     channel = fetch_feed(feed)
 
+    import epdb; epdb.st()
     if feed.etag == channel.etag or channel.status == 304:
         print "Feed has not changed since we last checked."
         return None
@@ -52,7 +53,7 @@ def process_feed(feed):
 
     feed.feed_title = channel.feed.get('title', feed.feed_title)
     #feed.tagline = channel.feed.get('tagline', feed.tagline)
-    #feed.feed_url = channel.feed.get('link', feed.feed_url)
+    feed.site_url = channel.feed.get('link', feed.feed_url)
     feed.last_checked = datetime.datetime.now()
 
     print "Feed updated"
@@ -63,6 +64,8 @@ def process_feed(feed):
 def process_entries(feed, channel):
 
     for entry in channel.entries:
+        entry
+
         guid = entry.get('id', feed.feed_title)
 
         try:
@@ -102,7 +105,6 @@ def process_entries(feed, channel):
 
         from planeta.models import Post
 
-#        import epdb; epdb.st()
         post = Post.objects.filter(feed=feed.id, guid=guid)
         if not post:
             print "Creating new post."
